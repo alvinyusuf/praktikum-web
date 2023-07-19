@@ -15,12 +15,12 @@
                 <tr>
                     <td>Nama</td>
                     <td>:</td>
-                    <td>Dimas Surya W</td>
+                    <td>Kelompok Praktikum Web</td>
                 </tr>
                 <tr>
-                    <td>NIM</td>
+                    <td>Anggota</td>
                     <td>:</td>
-                    <td>32602100039</td>
+                    <td>Dimas, Alvin, Labib, Amar</td>
                 </tr>
             </table>
         </nav>
