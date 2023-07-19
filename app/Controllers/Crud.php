@@ -8,6 +8,7 @@ use App\Models\MahasiswaModel;
 class Crud extends BaseController
 {
 
+    //koneksi ke database
     protected $db;
     public function __construct()
     {
@@ -15,6 +16,7 @@ class Crud extends BaseController
         
     }
 
+    //function index untuk menampilkan halaman
     public function index()
     {
         $all = $this->db->findAll();
@@ -24,6 +26,7 @@ class Crud extends BaseController
         return view('crud/view', $data);
     }
 
+    //function tambah data
     public function tambah()
     {
         if (isset($_POST['nim'])) {
@@ -46,6 +49,7 @@ class Crud extends BaseController
         }
     }
 
+    //function untuk menampilkan halaman edit
     public function edit($id)
     {
         $nim = $id;
@@ -56,6 +60,7 @@ class Crud extends BaseController
         return view('crud/edit', $data);
     }
 
+    //function untuk menyimpan data edit dan melakukan query edit ke db
     public function editan()
     {
         $nim = $_POST['nim'];
@@ -77,6 +82,7 @@ class Crud extends BaseController
     }
 
 
+    //function untuk menghapus data
     public function hapus($id)
     {
         $nim = $id;
